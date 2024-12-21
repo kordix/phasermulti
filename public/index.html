@@ -40,7 +40,7 @@
         }
 
         function create() {
-            socket = io("http://localhost:3000");
+            socket = io();
             player = this.physics.add.sprite(Math.random() * 400, Math.random() * 400, "player");
             player.setCollideWorldBounds(true);
 
