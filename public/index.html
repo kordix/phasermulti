@@ -62,6 +62,7 @@
 
             // Remove disconnected player
             socket.on("playerDisconnected", (id) => {
+                alert('PLAYER DISOCCENTED');
                 otherPlayers.getChildren().forEach((otherPlayer) => {
                     if (otherPlayer.id === id) {
                         otherPlayer.destroy();
